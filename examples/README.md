@@ -9,4 +9,4 @@ scripts (e.g. `node basic-web-client.js`). We recommend using the latest LTS ver
 *  **Basic Incoming Webhook** (`basic-incoming-webhook.js`) -- Using an Incoming Webhook
 *  **Upload a file** (`upload-a-file.js`) -- Upload a file to Slack using the Web API
 
-The [documentation site](https://github.com/slackapi/node-slack-sdk) contains more in-depth explanations.
+The [documentation site](https://github.com/slackapi/docs) contains more in-depth explanations.

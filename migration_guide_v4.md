@@ -2,7 +2,7 @@ This migration guide helps you transition an application written using the `v3.x
 series. This guide focuses specifically on the breaking changes to help get your existing app up and running as
 quickly as possible. In some cases, there may be better techniques for accomplishing what your app already does by
 utilizing brand new features or new API. Learn about all the new features in our
-[`v4.0.0` release notes](https://github.com/slackapi/node-slack-sdk/releases/tag/v4.0.0) if you'd like
+[`v4.0.0` release notes](https://github.com/slackapi/docs/releases/tag/v4.0.0) if you'd like
 to go beyond a simple port.
 
 ## WebClient
@@ -13,7 +13,7 @@ to go beyond a simple port.
 *  The `transport` option has been removed. If you used this option to implement proxy support, use the new `agent`
    option as described [below](#proxy-support-with-agent). If you used this option for setting custom TLS configuration,
    use the new `tls` option as described [below](#custom-tls-configuration). If you were using this for
-   some other reason, please [open an issue](https://github.com/slackapi/node-slack-sdk/issues/new) and describe your
+   some other reason, please [open an issue](https://github.com/slackapi/docs/issues/new) and describe your
    use case so we can help you migrate.
 
 ### All methods
@@ -83,13 +83,13 @@ The top-level export name has changed from `RtmClient` to `RTMClient`.
 ### Constructor
 
 *  The `slackAPIUrl` option has been renamed to `slackApiUrl` to improve readability.
-*  The `dataStore` option has been removed. See the [DataStore v3.x Migration Guide](https://github.com/slackapi/node-slack-sdk/wiki/DataStore-v3.x-Migration-Guide).
+*  The `dataStore` option has been removed. See the [DataStore v3.x Migration Guide](https://github.com/slackapi/docs/wiki/DataStore-v3.x-Migration-Guide).
 *  The `useRtmConnect` option now has a default value of `true`. We recommend querying for additional data using a
    `WebClient` after this client is connected. If that doesn't help, then you can set this option to `false`.
 *  The `socketFn` option has been removed. If you used this option to implement proxy support, use the new `agent`
    option as described [below](#proxy-support-with-agent). If you used this option for setting custom TLS
    configuration, use the new `tls` option as described [below](#custom-tls-configuration). If you were using this for
-   some other reason, please [open an issue](https://github.com/slackapi/node-slack-sdk/issues/new) and describe your
+   some other reason, please [open an issue](https://github.com/slackapi/docs/issues/new) and describe your
    use case so we can help you migrate.
 *  The `wsPingInterval` and `maxPongInterval` options have been replaced with `clientPingTimeout` and
    `serverPongTimeout`. Most likely, you can replace these values respectively, or drop using them all together.
@@ -97,7 +97,7 @@ The top-level export name has changed from `RtmClient` to `RTMClient`.
 ### dataStore
 
 The data store has been removed from the `RTMClient`. See the
-[DataStore v3.x Migration Guide](https://github.com/slackapi/node-slack-sdk/wiki/DataStore-v3.x-Migration-Guide) for
+[DataStore v3.x Migration Guide](https://github.com/slackapi/docs/wiki/DataStore-v3.x-Migration-Guide) for
 more details on this change.
 
 ### reconnect()

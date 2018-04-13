@@ -1,17 +1,17 @@
 # Node Slack SDK
 
-[![Build Status](https://travis-ci.org/slackapi/node-slack-sdk.svg?branch=master)](https://travis-ci.org/slackapi/node-slack-sdk)
-[![codecov](https://codecov.io/gh/slackapi/node-slack-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/slackapi/node-slack-sdk)
+[![Build Status](https://travis-ci.org/slackapi/docs.svg?branch=master)](https://travis-ci.org/slackapi/docs)
+[![codecov](https://codecov.io/gh/slackapi/docs/branch/master/graph/badge.svg)](https://codecov.io/gh/slackapi/docs)
 [![npm (scoped)](https://img.shields.io/npm/v/@slack/client.svg)](https://www.npmjs.com/package/@slack/client)
 
-Visit the [full documentation](https://slackapi.github.io/node-slack-sdk) for all the lovely details.
+Visit the [full documentation](https://shopizer.github.io/docs) for all the lovely details.
 
 So you want to build a Slack app with Node.js? We've got you covered. This package is aimed at making
 building Slack apps ridiculously easy. It helps you build on all aspects of the Slack platform, from dropping
 notifications in channels to fully interactive bots.
 
 **Upgrading from version 3?** The
-[migration guide](https://github.com/slackapi/node-slack-sdk/wiki/Migration-Guide-for-v4) has all the information you
+[migration guide](https://github.com/slackapi/docs/wiki/Migration-Guide-for-v4) has all the information you
 need to bring your app up to speed.
 
 ## Requirements
@@ -36,14 +36,14 @@ fits for your app.
 
 | Slack API    | Outgoing | Incoming | NPM Package         | Documentation     |
 |--------------|:--------:|:--------:|---------------------|-------------------|
-| Web API      | ⬆️        | ⬜️       | `@slack/client`     | [Guide](https://slackapi.github.io/node-slack-sdk/web_api) |
-| RTM API      | ⬆️        | ⬇️        | `@slack/client`     | [Guide](https://slackapi.github.io/node-slack-sdk/rtm_api) |
-| Incoming Webhooks | ⬆️   | ⬜️       | `@slack/client`     | [Guide](https://slackapi.github.io/node-slack-sdk/incoming_webhook) |
+| Web API      | ⬆️        | ⬜️       | `@slack/client`     | [Guide](https://shopizer.github.io/docs/web_api) |
+| RTM API      | ⬆️        | ⬇️        | `@slack/client`     | [Guide](https://shopizer.github.io/docs/rtm_api) |
+| Incoming Webhooks | ⬆️   | ⬜️       | `@slack/client`     | [Guide](https://shopizer.github.io/docs/incoming_webhook) |
 | Events API   | ⬜️       | ⬇️        | `@slack/events-api` | [README](https://github.com/slackapi/node-slack-events-api) |
 | Interactive Messages | ⬜️ | ⬇️      | `@slack/interactive-messages` | [README](https://github.com/slackapi/node-slack-interactive-messages) |
 
 **Just starting out?** We suggest starting at the
-[Getting Started guide](https://slackapi.github.io/node-slack-sdk/getting_started) which will walk you
+[Getting Started guide](https://shopizer.github.io/docs/getting_started) which will walk you
 through building your first Slack app using Node.js.
 
 **Not sure about which APIs are right for your app?** Read our
@@ -82,7 +82,7 @@ web.chat.postMessage({ channel: conversationId, text: 'Hello there' })
 
 The `WebClient` object makes it simple to call any of the
 [**over 130 Web API methods**](https://api.slack.com/methods). See the
-[guide](http://slackapi.github.io/node-slack-sdk/web_api) for details.
+[guide](https://shopizer.github.io/docs/web_api) for details.
 
 ### Posting a message with the Real-Time Messaging API
 
@@ -114,7 +114,7 @@ rtm.sendMessage('Hello there', conversationId)
 
 The `RTMClient` object makes it simple to listen for [events](https://api.slack.com/rtm#events) from a workspace
 and send simple messages to a workspace. See the
-[guide](http://slackapi.github.io/node-slack-sdk/rtm_api) for details.
+[guide](https://shopizer.github.io/docs/rtm_api) for details.
 
 ## Posting a message with Incoming Webhooks
 
@@ -141,8 +141,8 @@ webhook.send('Hello there', function(err, res) {
 
 If you get stuck, we're here to help. The following are the best ways to get assistance working through your issue:
 
-  * [Issue Tracker](http://github.com/slackapi/node-slack-sdk/issues) for questions, feature
+  * [Issue Tracker](http://github.com/slackapi/docs/issues) for questions, feature
     requests, bug reports and general discussion related to this package.
   * [Email us](mailto:developers@slack.com) in Slack developer support: `developers@slack.com`
   * [Bot Developers Hangout](https://community.botkit.ai/): a Slack community for developers
-    building all types of bots. You can find the maintainers and users of this package in **#sdk-node-slack-sdk**.
+    building all types of bots. You can find the maintainers and users of this package in **#sdk-docs**.

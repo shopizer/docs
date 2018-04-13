@@ -21,9 +21,9 @@
     "node": ">= 6.9.0",
     "npm": ">= 3.10.8"
   },
-  "repository": "slackapi/node-slack-sdk",
+  "repository": "slackapi/docs",
   "bugs": {
-    "url": "https://github.com/slackapi/node-slack-sdk/issues"
+    "url": "https://github.com/slackapi/docs/issues"
   },
   "scripts": {
     "prepublish": "npm run build",

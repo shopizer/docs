@@ -52,7 +52,7 @@ that explains and compares the options. If you're still not sure,
 [reach out for help](#getting-help) and our community can guide you.
 
 **Upgrading from version 3?** The
-[migration guide](https://github.com/slackapi/node-slack-sdk/wiki/Migration-Guide-for-v4) has all the information you
+[migration guide](https://github.com/slackapi/docs/wiki/Migration-Guide-for-v4) has all the information you
 need to bring your app up to speed
 
 ---
@@ -64,7 +64,7 @@ only depend on the parts that fit into your app.
 
 If you're looking for an all-in-one solution that hides the underlying Slack APIs, but
 simplifies building a bot-style app inside Slack, try the
-[Hubot Slack adapter](https://slackapi.github.io/hubot-slack/). This framework is popular for
+[Hubot Slack adapter](https://shopizer.github.io/hubot-slack/). This framework is popular for
 internal apps that automate workflows, perform ChatOps, or just generate silly memes.
 
 ## Getting Help
@@ -75,4 +75,4 @@ If you get stuck, we're here to help. The following are the best ways to get ass
     requests, bug reports and general discussion related to this package.
   * [Email us](mailto:developers@slack.com) in Slack developer support: `developers@slack.com`
   * [Bot Developers Hangout](https://community.botkit.ai/): a Slack community for developers
-    building all types of bots. You can find the maintainers and users of this package in **#sdk-node-slack-sdk**.
+    building all types of bots. You can find the maintainers and users of this package in **#sdk-docs**.
